@@ -26,6 +26,7 @@ abstract class Base<T extends StatefulWidget> extends State<T> {
    */
   Future<Odoo> getOdooInstance() async {
     preferences = await SharedPreferences.getInstance();
+    preferences.clear();
     String userPref = preferences.getString(Constants.USER_PREF); // User Data
     String odooUrl = getURL(); // Get OdooURL from SharedPreferences
     if (userPref != null) {
