@@ -53,7 +53,7 @@ class Result {
   Result.fromJson(Map<String, dynamic> json) {
     sessionId = json['session_id'];
     uid = json['uid'];
-    isAdmin = json['is_admin'] is! bool ? json['is_admin'] : "N/A";
+    isAdmin = json['is_admin'];
     userContext = json['user_context'] != null
         ? new UserContext.fromJson(json['user_context'])
         : null;
@@ -69,7 +69,7 @@ class Result {
     partnerId = json['partner_id'];
     userCompanies =  true;
     webBaseUrl = json['web.base.url'] is! bool ? json['web.base.url'] : "N/A";
-    odoobotInitialized = json['odoobot_initialized']  is! bool ? json['odoobot_initialized'] : "N/A";
+    odoobotInitialized = json['odoobot_initialized'];
   }
 
   Map<String, dynamic> toJson() {

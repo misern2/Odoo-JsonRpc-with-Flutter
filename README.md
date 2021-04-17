@@ -14,3 +14,9 @@ This Project Supports **Odoo 10.0, 11.0, 12.0 Community and Enterprise Edition**
         <application android:usesCleartextTraffic="true"/>
 
     * Then access 10.0.2.2:<PORT>
+
+# Mockup design Tool:
+
+https://www.figma.com
+
+
