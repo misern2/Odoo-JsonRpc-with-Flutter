@@ -4,7 +4,6 @@ import 'package:odoo_json_rpc_flutter/app/data/services/odoo_api.dart';
 import 'package:odoo_json_rpc_flutter/app/pages/home.dart';
 import 'package:odoo_json_rpc_flutter/app/pages/settings.dart';
 import 'package:odoo_json_rpc_flutter/base.dart';
-
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';

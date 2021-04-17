@@ -236,4 +236,31 @@ abstract class Base<T extends StatefulWidget> extends State<T> {
     showSnackBar(Strings.internetMessage);
     return false;
   }
+
+  final drawer_menu = Drawer(
+      child: ListView(
+        children: <Widget>[
+          ListTile(
+            title: Text("Notificacions"),
+            trailing: Icon(Icons.arrow_forward),
+
+          ),
+          ListTile(
+            title: Text("Factures"),
+            trailing: Icon(Icons.arrow_forward),
+
+          ),
+          ListTile(
+            title: Text("Extra Escolars"),
+            trailing: Icon(Icons.arrow_forward),
+
+          ),
+          ListTile(
+            title: Text("Casals"),
+            trailing: Icon(Icons.arrow_forward),
+
+          ),
+        ]
+      ),
+    );
 }

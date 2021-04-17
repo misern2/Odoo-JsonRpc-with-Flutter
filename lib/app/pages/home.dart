@@ -118,6 +118,7 @@ class _HomeState extends Base<Home> {
           ),
         ],
       ),
+      drawer: drawer_menu,
       body: _partners.length > 0
           ? ListView.builder(
               itemCount: _partners.length,
